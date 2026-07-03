@@ -1,36 +1,91 @@
 
 
 export const Card = () => {
+    let españa ={
+        nombre:"España",
+        img: "https://paladarnegro.net/escudoteca/selecciones/selecciones/img/espana.jpg",
+        color:"background-color:red",
+        texto:"Esta selección ha sido 1 vez campeona del mundo."
+
+    }
+
+    let francia ={
+        nombre:"España",
+        img: "https://paladarnegro.net/escudoteca/selecciones/selecciones/img/espana.jpg",
+        color:"background-color:red",
+        texto:"Esta selección ha sido 1 vez campeona del mundo."
+
+    }
+
+    let italia ={
+        nombre:"España",
+        img: "https://paladarnegro.net/escudoteca/selecciones/selecciones/img/espana.jpg",
+        color:"background-color:red",
+        texto:"Esta selección ha sido 1 vez campeona del mundo."
+
+    }
+
+    let alemania ={
+        nombre:"España",
+        img: "https://paladarnegro.net/escudoteca/selecciones/selecciones/img/espana.jpg",
+        color:"background-color:red",
+        texto:"Esta selección ha sido 1 vez campeona del mundo."
+
+    }
+
+
+    let estiloCarta = {
+        width: "18rem"
+    }
 
     return (
-        <div className="container-fluid">
+        <div className="container">
             <div className="row">
-                <div class="card col-md-4" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div className="col-sm-12 col-md-3 d-flex justify-content-center bg-danger">
+                    <div className="card" style={estiloCarta}>
+                        <img src={españa.img} className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">{españa.nombre}</h5>
+                            <p className="card-text">{españa.texto}</p>
+                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-md-4" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div className="col-md-3 col-sm-12 d-flex justify-content-center">
+                    <div className="card " style={estiloCarta}>
+                        <img src="..." className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="col-md-3 col-sm-12 d-flex justify-content-center">
+                    <div className="card " style={estiloCarta}>
+                        <img src="..." className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-md-4" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div className="col-md-3 col-sm-12 d-flex justify-content-center">
+                    <div className="card " style={estiloCarta}>
+                        <img src="..." className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
+
+
     )
 }
